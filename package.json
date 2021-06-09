@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "sass ./src/scss/styles.scss:./dist/css/styles.min.css -w --style compressed",
     "babel": "babel ./src/js/index.js --watch --out-file dist/js/bundle.min.js --source-maps",
-    "pug": "pug ./src/pug/templates -o ./dist -w",
+    "pug": "pug ./src/pug/pages -o ./dist -w",
     "prefix": "postcss ./dist/css/styles.min.css --replace --use autoprefixer",
     "start": "npm-run-all -p pug sass babel"
   },
